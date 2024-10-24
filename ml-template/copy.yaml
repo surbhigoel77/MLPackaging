@@ -1,0 +1,36 @@
+# copier.yml
+
+# Control template behavior
+_templates_suffix: ".tmpl"
+
+# Prompts for user input when generating the project
+project_name:
+  type: str
+  help: "What is the name of your ML project?"
+  default: "my-ml-project"
+
+author_name:
+  type: str
+  help: "Who is the author?"
+  default: "John Doe"
+
+ml_framework:
+  type: choice
+  help: "Which ML framework do you want to use?"
+  choices:
+    - "TensorFlow"
+    - "PyTorch"
+    - "Scikit-learn"
+  default: "TensorFlow"
+
+include_docker:
+  type: bool
+  help: "Do you want to include Docker and docker-compose for deployment?"
+  default: true
+
+# Pre/post tasks to run during generation
+_tasks:
+  - echo "Setting up your ML project: [% project_name %]"
+
+# Exclude certain files/folders
+_exclude: ["notebooks/.ipynb_checkpoints"]

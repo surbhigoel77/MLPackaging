@@ -1,0 +1,12 @@
+# [% project_name %]
+
+Author: [% author_name %]
+
+## Overview
+This is a machine learning project template using [% ml_framework %] framework.
+
+## Getting Started
+
+1. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt

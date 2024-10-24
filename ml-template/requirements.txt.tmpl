@@ -1,0 +1,16 @@
+
+#### Example `requirements.txt.tmpl`
+
+```txt
+# Core dependencies
+numpy
+pandas
+
+# ML framework-specific dependencies
+[% if ml_framework == "TensorFlow" %]
+tensorflow
+[% elif ml_framework == "PyTorch" %]
+torch
+[% elif ml_framework == "Scikit-learn" %]
+scikit-learn
+[% endif %]
