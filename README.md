@@ -1,5 +1,12 @@
 # MLPackaging
 
+
+Use the following command to copy the template:
+
+`copier copy path-to-ml-template path-to-new-ml-project`
+
+
+
 ml-template/
 ├── copier.yml                # Template configuration file
 ├── README.md.tmpl            # Template for README.md
